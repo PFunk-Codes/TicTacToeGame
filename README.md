@@ -26,3 +26,20 @@ New developers will often be asked to get up to speed on a project rapidly. It i
     * <iframe width="560" height="315" src="https://www.youtube.com/embed/l-hh51ncgDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 1. I've implemented this algorithm in Computer.java for the AI player, BUT I've added a bug that causes the AI to malfunction when it is the minimizing player.
     * If you can find the MiniMax bug, correct it in your Java code, and submit a pull request back to this branch under a **feature branch** called **MiniMaxBug** you can receive a full lab grade.
+
+
+
+TicTacToe is the initializing class, which is launched in Main as the application.
+
+Player is an abstract class which defines certain characteristics of a player entity.
+Sentient and Computer are children of Player. 
+   Sentient is an empty class with no functionality, because it is dependent on external inputs.
+   Computer contains the MiniMax Algorithm, which determines the proper course of play for Tic Tac Toe.
+
+PlayerFactory creates new players, and determines whether they should be created as a Sentient or Computer.
+
+BoardButton defines the creation of Buttons on the Tic Tac Toe board. It inherits from Button, which is a class contained in JavaFX.
+
+How does the MiniMax Algorithm in Computer work?
+How does JavaFX integrate into these classes?
+Where is Application and Button?
